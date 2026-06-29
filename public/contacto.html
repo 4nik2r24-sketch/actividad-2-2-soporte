@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Soporte - Tienda de Suplementos</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 500px; margin: 50px auto; padding: 20px; }
+        input, textarea { width: 100%; margin-bottom: 15px; padding: 10px; box-sizing: border-box; }
+        button { background: #28a745; color: white; border: none; padding: 12px; width: 100%; cursor: pointer; }
+        #respuesta { margin-top: 20px; padding: 10px; display: none; }
+    </style>
+</head>
+<body>
+    <h2>Centro de Soporte Técnico</h2>
+    <form id="soporteForm">
+        <label>Nombre:</label>
+        <input type="text" id="nombre" required placeholder="Tu nombre">
+        
+        <label>Correo electrónico:</label>
+        <input type="email" id="correo" required placeholder="cliente@correo.cl">
+        
+        <label>Asunto o problema:</label>
+        <textarea id="asunto" rows="4" required placeholder="Describe tu consulta..."></textarea>
+        
+        <button type="submit">Enviar Solicitud</button>
+    </form>
+
+    <div id="respuesta"></div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
